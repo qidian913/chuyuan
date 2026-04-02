@@ -1,0 +1,892 @@
+{
+  "export_time": "2026-04-02T04:14:58.496003",
+  "sprint": "M1",
+  "total_tasks": 32,
+  "tasks": [
+    {
+      "task_id": "TASK-UI-001",
+      "title": "设计系统基础规范",
+      "type": "design",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "ui_ux_agent",
+      "blocked_by": [],
+      "spec": {
+        "description": "建立时光树设计系统基础规范，包括色彩、字体、间距、圆角等",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484833",
+      "started_at": "2026-04-02T04:14:58.486114",
+      "completed_at": "2026-04-02T04:14:58.487986",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UI-002",
+      "title": "孕期插件UI设计稿",
+      "type": "design",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "ui_ux_agent",
+      "blocked_by": [
+        "TASK-UI-001"
+      ],
+      "spec": {
+        "description": "孕期插件完整UI设计稿",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "5d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484962",
+      "started_at": "2026-04-02T04:14:58.489531",
+      "completed_at": "2026-04-02T04:14:58.490715",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UI-003",
+      "title": "婴儿期插件UI设计稿",
+      "type": "design",
+      "priority": "P0",
+      "status": "in_progress",
+      "assignee": "ui_ux_agent",
+      "blocked_by": [
+        "TASK-UI-001"
+      ],
+      "spec": {
+        "description": "婴儿期插件完整UI设计稿",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "5d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484967",
+      "started_at": "2026-04-02T04:14:58.489560",
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UI-004",
+      "title": "管理后台UI设计稿",
+      "type": "design",
+      "priority": "P1",
+      "status": "completed",
+      "assignee": "ui_ux_agent",
+      "blocked_by": [
+        "TASK-UI-001"
+      ],
+      "spec": {
+        "description": "管理后台完整UI设计稿",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "5d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484970",
+      "started_at": "2026-04-02T04:14:58.492431",
+      "completed_at": "2026-04-02T04:14:58.493941",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UI-005",
+      "title": "年龄适配主题系统",
+      "type": "design",
+      "priority": "P1",
+      "status": "pending",
+      "assignee": "ui_ux_agent",
+      "blocked_by": [
+        "TASK-UI-002",
+        "TASK-UI-003"
+      ],
+      "spec": {
+        "description": "7个年龄段的UI适配主题系统",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484973",
+      "started_at": null,
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "Blocked by TASK-UI-003 (in_progress)",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-DB-001",
+      "title": "核心数据模型设计",
+      "type": "design",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "db_agent",
+      "blocked_by": [],
+      "spec": {
+        "description": "核心数据模型设计",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": [
+          "users",
+          "lives",
+          "families",
+          "family_members"
+        ]
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484977",
+      "started_at": "2026-04-02T04:14:58.486160",
+      "completed_at": "2026-04-02T04:14:58.488379",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-DB-002",
+      "title": "时间轴与内容表设计",
+      "type": "design",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "db_agent",
+      "blocked_by": [
+        "TASK-DB-001"
+      ],
+      "spec": {
+        "description": "时间轴与内容管理表设计",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": [
+          "timeline",
+          "timeline_likes",
+          "timeline_comments",
+          "contents"
+        ]
+      },
+      "time_estimate": "2d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484980",
+      "started_at": "2026-04-02T04:14:58.489601",
+      "completed_at": "2026-04-02T04:14:58.489705",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-DB-003",
+      "title": "AI服务表设计",
+      "type": "design",
+      "priority": "P1",
+      "status": "completed",
+      "assignee": "db_agent",
+      "blocked_by": [
+        "TASK-DB-001"
+      ],
+      "spec": {
+        "description": "AI服务相关表设计",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": [
+          "ai_sessions",
+          "ai_messages",
+          "ai_analysis_results"
+        ]
+      },
+      "time_estimate": "2d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484983",
+      "started_at": "2026-04-02T04:14:58.489628",
+      "completed_at": "2026-04-02T04:14:58.490022",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-DB-004",
+      "title": "数据库索引优化设计",
+      "type": "design",
+      "priority": "P1",
+      "status": "completed",
+      "assignee": "db_agent",
+      "blocked_by": [
+        "TASK-DB-002",
+        "TASK-DB-003"
+      ],
+      "spec": {
+        "description": "数据库索引优化设计文档",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "1d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484987",
+      "started_at": "2026-04-02T04:14:58.490659",
+      "completed_at": "2026-04-02T04:14:58.491001",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-DB-005",
+      "title": "公私空间隔离实现",
+      "type": "design",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "db_agent",
+      "blocked_by": [
+        "TASK-DB-001"
+      ],
+      "spec": {
+        "description": "公私空间隔离数据库层实现方案",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "2d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484990",
+      "started_at": "2026-04-02T04:14:58.490693",
+      "completed_at": "2026-04-02T04:14:58.495554",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UNI-001",
+      "title": "UniApp项目脚手架搭建",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "uniapp_agent",
+      "blocked_by": [],
+      "spec": {
+        "description": "UniApp项目创建、配置Vue3、Pinia、路由等基础框架",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "2d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484992",
+      "started_at": "2026-04-02T04:14:58.486193",
+      "completed_at": "2026-04-02T04:14:58.488760",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UNI-002",
+      "title": "底座框架开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "uniapp_agent",
+      "blocked_by": [
+        "TASK-UNI-001",
+        "TASK-DB-001"
+      ],
+      "spec": {
+        "description": "用户认证、生命周期管理、公私空间切换等底座功能",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "5d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484995",
+      "started_at": "2026-04-02T04:14:58.489675",
+      "completed_at": "2026-04-02T04:14:58.492624",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UNI-003",
+      "title": "公私空间切换组件",
+      "type": "feature",
+      "priority": "P0",
+      "status": "ready",
+      "assignee": "uniapp_agent",
+      "blocked_by": [
+        "TASK-UNI-002",
+        "TASK-DB-005"
+      ],
+      "spec": {
+        "description": "公私空间可视化切换组件",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "2d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484997",
+      "started_at": null,
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UNI-004",
+      "title": "孕期插件UI开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "uniapp_agent",
+      "blocked_by": [
+        "TASK-UNI-002",
+        "TASK-UI-002"
+      ],
+      "spec": {
+        "description": "孕期插件页面开发",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "5d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.484999",
+      "started_at": "2026-04-02T04:14:58.493865",
+      "completed_at": "2026-04-02T04:14:58.494098",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UNI-005",
+      "title": "婴儿期插件UI开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "pending",
+      "assignee": "uniapp_agent",
+      "blocked_by": [
+        "TASK-UNI-002",
+        "TASK-UI-003"
+      ],
+      "spec": {
+        "description": "婴儿期插件页面开发",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "5d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485002",
+      "started_at": null,
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "Blocked by TASK-UI-003 (in_progress)",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-UNI-006",
+      "title": "年龄适配主题集成",
+      "type": "feature",
+      "priority": "P1",
+      "status": "pending",
+      "assignee": "uniapp_agent",
+      "blocked_by": [
+        "TASK-UNI-004",
+        "TASK-UNI-005",
+        "TASK-UI-005"
+      ],
+      "spec": {
+        "description": "年龄适配主题在移动端的集成",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485004",
+      "started_at": null,
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "Blocked by TASK-UNI-005 (pending)",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-NEXT-001",
+      "title": "Next.js项目脚手架搭建",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "nextjs_agent",
+      "blocked_by": [],
+      "spec": {
+        "description": "Next.js 14项目创建、配置TypeScript、Tailwind等",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "2d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485006",
+      "started_at": "2026-04-02T04:14:58.486219",
+      "completed_at": "2026-04-02T04:14:58.491285",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-NEXT-002",
+      "title": "管理后台布局框架",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "nextjs_agent",
+      "blocked_by": [
+        "TASK-NEXT-001",
+        "TASK-UI-001"
+      ],
+      "spec": {
+        "description": "管理后台整体布局框架",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485008",
+      "started_at": "2026-04-02T04:14:58.492461",
+      "completed_at": "2026-04-02T04:14:58.492865",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-NEXT-003",
+      "title": "用户管理页面开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "in_progress",
+      "assignee": "nextjs_agent",
+      "blocked_by": [
+        "TASK-NEXT-002",
+        "TASK-BE-GO-002"
+      ],
+      "spec": {
+        "description": "用户列表、用户详情、状态管理页面",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485576",
+      "started_at": "2026-04-02T04:14:58.495484",
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-NEXT-004",
+      "title": "家庭管理页面开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "nextjs_agent",
+      "blocked_by": [
+        "TASK-NEXT-002",
+        "TASK-BE-GO-003"
+      ],
+      "spec": {
+        "description": "家庭列表、家庭详情、成员管理页面",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485583",
+      "started_at": "2026-04-02T04:14:58.493891",
+      "completed_at": "2026-04-02T04:14:58.494255",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-NEXT-005",
+      "title": "数据分析看板开发",
+      "type": "feature",
+      "priority": "P1",
+      "status": "in_progress",
+      "assignee": "nextjs_agent",
+      "blocked_by": [
+        "TASK-NEXT-002",
+        "TASK-BE-GO-006"
+      ],
+      "spec": {
+        "description": "DAU/MAU统计、内容贡献等数据看板",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "4d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485586",
+      "started_at": "2026-04-02T04:14:58.495510",
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-GO-001",
+      "title": "Go项目结构搭建",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_go_agent",
+      "blocked_by": [],
+      "spec": {
+        "description": "Go项目目录结构、中间件、项目规范",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "1d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485588",
+      "started_at": "2026-04-02T04:14:58.486245",
+      "completed_at": "2026-04-02T04:14:58.491562",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-GO-002",
+      "title": "用户认证API开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_go_agent",
+      "blocked_by": [
+        "TASK-BE-GO-001",
+        "TASK-DB-001"
+      ],
+      "spec": {
+        "description": "手机号登录、微信登录、JWT Token API",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485591",
+      "started_at": "2026-04-02T04:14:58.492485",
+      "completed_at": "2026-04-02T04:14:58.494881",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-GO-003",
+      "title": "生命管理API开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_go_agent",
+      "blocked_by": [
+        "TASK-BE-GO-001",
+        "TASK-DB-001"
+      ],
+      "spec": {
+        "description": "Life ID管理、阶段切换API",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485593",
+      "started_at": "2026-04-02T04:14:58.492508",
+      "completed_at": "2026-04-02T04:14:58.493065",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-GO-004",
+      "title": "家庭管理API开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "ready",
+      "assignee": "backend_go_agent",
+      "blocked_by": [
+        "TASK-BE-GO-001",
+        "TASK-DB-001",
+        "TASK-DB-005"
+      ],
+      "spec": {
+        "description": "创建/加入家庭、成员管理API",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485595",
+      "started_at": null,
+      "completed_at": null,
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-GO-005",
+      "title": "时间轴API开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_go_agent",
+      "blocked_by": [
+        "TASK-BE-GO-001",
+        "TASK-DB-002"
+      ],
+      "spec": {
+        "description": "时间轴CRUD、点赞评论API",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "4d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485598",
+      "started_at": "2026-04-02T04:14:58.492531",
+      "completed_at": "2026-04-02T04:14:58.493259",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-GO-006",
+      "title": "统计分析API开发",
+      "type": "feature",
+      "priority": "P1",
+      "status": "completed",
+      "assignee": "backend_go_agent",
+      "blocked_by": [
+        "TASK-BE-GO-001",
+        "TASK-DB-004"
+      ],
+      "spec": {
+        "description": "DAU/MAU、内容统计API",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485600",
+      "started_at": "2026-04-02T04:14:58.493920",
+      "completed_at": "2026-04-02T04:14:58.495034",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-PY-001",
+      "title": "Python AI服务脚手架",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_python_agent",
+      "blocked_by": [],
+      "spec": {
+        "description": "Python AI服务目录结构、FastAPI框架、依赖",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "1d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485602",
+      "started_at": "2026-04-02T04:14:58.486270",
+      "completed_at": "2026-04-02T04:14:58.491850",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-PY-002",
+      "title": "向量数据库集成",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_python_agent",
+      "blocked_by": [
+        "TASK-BE-PY-001",
+        "TASK-DB-003"
+      ],
+      "spec": {
+        "description": "Milvus/Qdrant向量数据库集成",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "3d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485604",
+      "started_at": "2026-04-02T04:14:58.492569",
+      "completed_at": "2026-04-02T04:14:58.494415",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-PY-003",
+      "title": "长期记忆引擎开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_python_agent",
+      "blocked_by": [
+        "TASK-BE-PY-002"
+      ],
+      "spec": {
+        "description": "AI长期记忆存储与检索引擎",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "5d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485606",
+      "started_at": "2026-04-02T04:14:58.494858",
+      "completed_at": "2026-04-02T04:14:58.495178",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-PY-004",
+      "title": "情感分析服务开发",
+      "type": "feature",
+      "priority": "P0",
+      "status": "completed",
+      "assignee": "backend_python_agent",
+      "blocked_by": [
+        "TASK-BE-PY-001"
+      ],
+      "spec": {
+        "description": "文本情感分析服务开发",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "4d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485608",
+      "started_at": "2026-04-02T04:14:58.492599",
+      "completed_at": "2026-04-02T04:14:58.493458",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    },
+    {
+      "task_id": "TASK-BE-PY-005",
+      "title": "AI对话服务开发",
+      "type": "feature",
+      "priority": "P1",
+      "status": "completed",
+      "assignee": "backend_python_agent",
+      "blocked_by": [
+        "TASK-BE-PY-003"
+      ],
+      "spec": {
+        "description": "家庭AI、个人AI对话服务",
+        "requirements": [],
+        "api_spec": {},
+        "design_spec": {},
+        "db_spec": {},
+        "tables": []
+      },
+      "time_estimate": "4d",
+      "actual_time": null,
+      "created_at": "2026-04-02T04:14:58.485611",
+      "started_at": "2026-04-02T04:14:58.495534",
+      "completed_at": "2026-04-02T04:14:58.495662",
+      "outputs": [],
+      "blocked_reason": "",
+      "sprint": "M1"
+    }
+  ]
+}
